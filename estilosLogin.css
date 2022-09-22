@@ -1,0 +1,196 @@
+@font-face {
+    font-family:widelatin;
+    src: url(widelatin.ttf);
+    font-family: californiafb;
+    src: url(californiafb.ttf.TTF);
+}
+body{
+    background-color:rgb(207, 255, 255);
+}
+
+:root{
+    --padding-container: 100px 0;
+    --color-title:width;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto ;
+    overflow: hidden;
+    padding: var(--padding-container); 
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 800px; 
+    position: relative;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+        
+}
+.hero::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/imganenfondo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+        
+}
+
+.nav{
+    --padding-container:0;
+    height:100%;
+    display: flex;
+    
+}
+
+.nav_title{
+    
+    font-family: widelatin;
+    margin-left: 300px;
+    color: white;
+    font-size: 32pt;
+    font-weight: 900;
+}
+
+.nav_subtitle{
+    margin-top: -20px;
+    font-family: widelatin;
+    color: rgb(255, 255, 255);
+    font-size: 30pt;
+    font-weight: 900;
+}
+
+.nav_text{
+    color: white;
+    font-size: 15pt;
+}
+    
+.nav_iconosesion{
+    margin-left: 250px;
+    margin-top: -80px;
+}
+
+.nav_login{
+    margin-top: -110px;
+    margin-left: 500PX;
+
+}
+
+.nav_usuario{
+    color: rgb(255, 255, 255);
+    font-size: 15pt;
+    background-color: rgba(198, 252, 195, 0.193);
+}
+
+.nav_contraseña{
+    font-size: 15pt;
+    color: rgb(255, 255, 255);
+    background-color: rgba(198, 252, 195, 0.193);
+}
+
+.nav_sesion{
+    margin-top: -95px;
+    margin-left: 300px;
+   
+} 
+
+.nav_iniciar{
+    font-size: 13pt;
+    background-color:rgb(45, 138, 245);
+    color: white;
+    text-decoration: none;
+    padding: 10px 28px;
+    border-radius: 25px;
+}
+
+.nav_registrarse{
+    margin-left: 40px;
+    font-size: 13pt;
+    background-color:rgb(1, 57, 121);
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 25px; 
+}
+
+::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.nav_recordar{
+    margin-top: 10px;
+
+}
+
+.nav_olvido{
+    margin-top: 20px;
+    color: rgb(251, 255, 176);
+}
+
+.nav_contenido{
+    
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns:260px;
+    gap: 7em;
+}
+
+.nav_titulos{ 
+    color: rgb(134, 21, 21);
+    text-align: center;
+    margin-top: -350px;
+    margin-left: 180PX;
+    margin-right: -80px;
+    list-style: none;
+}
+
+.nav_nosotros{
+    font-size: 13pt;
+    color: black;
+}
+
+.nav_estudia{
+    font-size: 13pt;
+    color: black;
+}
+
+.nav_servicios{
+    font-size: 13pt;
+    text-align: justify;
+}
+
+.nav_bienestar{
+    color: blue;
+}
+
+.nav_asesorias{
+    color: blue;
+}
+
+.nav_imgnosotros{
+    width: 150px;
+    height: 120px;
+}
+
+.nav_imgestudia{
+    width: 150px;
+    height: 120px;
+    margin-top: 10px;
+}
+
+.nav_imgservicios{
+    width: 150px;
+    height: 120px;
+}

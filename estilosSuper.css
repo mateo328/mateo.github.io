@@ -1,0 +1,128 @@
+@font-face {
+    font-family:widelatin;
+    src: url(widelatin.ttf);
+    font-family: californiafb;
+    src: url(californiafb.ttf.TTF);
+}
+body{
+    background-color:rgb(207, 255, 255);
+}
+
+:root{
+    --padding-container: 100px 0;
+    --color-title:width;
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto ;
+    overflow: hidden;
+    padding: var(--padding-container); 
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+    max-height: 800px; 
+    position: relative;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+        
+}
+.hero::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/imganenfondo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+        
+}
+
+.nav{
+    --padding-container:0;
+    height:100%;
+    display: flex;
+    
+}
+
+.nav_title{
+    font-family: widelatin;
+    color: white;
+    font-size: 32pt;
+    font-weight: 900;
+}
+
+.nav_subtitle{
+    font-family: widelatin;
+    color: rgb(255, 255, 255);
+    font-size: 30pt;
+    font-weight: 900;
+}
+    
+    
+
+
+.nav_link{
+    margin-left:80px;
+    margin-top: 20px;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 4em;
+    
+    
+}
+   
+.nav_items{
+    list-style: none;
+
+}
+
+.nav_links{
+    font-family: widelatin;
+    font-size: 14pt;
+    font-weight: 700;
+    color:blue;
+    text-decoration: none;
+    
+}
+
+.nav_icono{
+    margin-top: -140px;
+    margin-left: 400px;
+}
+
+.nav_botton{
+    margin-top: -117px;
+    margin-left: 860px;
+
+}
+    
+.nav_cerrar{
+    font-size: 15pt;
+    background-color:rgb(45, 138, 245);
+    color: white;
+    text-decoration: none;
+    padding: 20px 28px;
+    border-radius: 30px;    
+}
+ 
+.hero_title{
+    font-family: widelatin;
+    color: rgb(109, 27, 27);
+}
+
+.hero_paragraph{
+    font-family: widelatin;
+    font-size: 15pt;
+}
